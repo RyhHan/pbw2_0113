@@ -29,7 +29,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="sampul" class="form-label">Sampul buku</label>
-                        <img id="img-preview" class="img-fluid mb-3 w-25px" style="display:none">
+                        <img id="img-preview" class="img-fluid mb-3 w-25px" width="250px" style="display:none">
                         <input class="form-control @error('sampul') is-invalid @enderror" 
                                type="file" id="sampul" name="sampul" onchange="previewImage()">
                         @error('sampul') <div class="invalid-feedback">{{ $message }}</div> @enderror
